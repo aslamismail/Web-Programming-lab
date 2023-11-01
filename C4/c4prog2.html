@@ -1,0 +1,25 @@
+<!-- Aslam Ismail 23MCA022 01-11-23 -->
+<html>
+<head>
+<script>
+function myfunction(){
+var x=parseInt(document.getElementById("name1").value);
+var y=parseInt(document.getElementById("name2").value);
+var z=x+y;
+document.getElementById("h").innerHTML=z;
+}
+</script>
+</head>
+<body>
+<h1>Display output</h1>
+
+<label>first number</label><br><br>
+<input type="text" id="name1"><br><br>
+<label>second number</label><br><br>
+<input type="text" id="name2"><br><br>
+
+<button onclick="myfunction()">sum</button>
+
+<h1 p id="h"></h1>
+</body>
+</html>
