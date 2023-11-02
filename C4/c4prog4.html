@@ -1,0 +1,25 @@
+<!-- Aslam Ismail 23MCA022 02-11-23 -->
+<html>
+<head>
+<script>
+function myfunction(){
+var x=parseInt(document.getElementById("var").value);
+if (x > 0) {
+document.getElementById("h").innerHTML="Number is positive";
+}
+else {
+document.getElementById("h").innerHTML="Number is negative"; 
+}
+}
+</script>
+</head>
+<body>
+<h1>Check positive or negative</h1>
+
+<label>Enter the Number</label><br><br>
+<input type="text" id="var"><br><br>
+<button onclick="myfunction()">Check</button>
+
+<p id="h"></p>
+</body>
+</html>
