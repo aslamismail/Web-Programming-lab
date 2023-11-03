@@ -1,0 +1,17 @@
+<!-- Aslam Ismail 23MCA022 03-11-23 -->
+<html>
+<head>
+</head>
+<body>
+    <p id="p">Name is</p>
+    <p id="a">Your Age is</p>
+    <script>
+        var name = prompt("Enter name ")
+        var dob = new Date(prompt("Enter Date of birth"))
+        var currentDate = new Date();
+        var diff = currentDate.getFullYear() - dob.getFullYear();
+        document.getElementById("p").innerHTML=name;
+		document.getElementById("a").innerHTML=diff;
+    </script>
+</body>
+</html>
