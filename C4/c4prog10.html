@@ -1,0 +1,23 @@
+<!-- Aslam Ismail 23MCA022 10-11-23 -->
+<html>
+<head>
+    <title>Change bg color</title>
+</head>
+<body>
+        <p id="text">Hello, How are you!</p>
+        <button id="change">Change</button>
+    <script>
+        var btn = document.getElementById("change")
+        let allChar = "0123456789ABCDEF"
+        btn.addEventListener("click", change)
+        function change(){
+
+            let randCol = ''
+            for (let i = 0; i < 6; i++) {
+                randCol += allChar[Math.floor(Math.random()*16)]
+            }
+            document.body.style.background = "#" + randCol
+        }
+    </script>
+</body>
+</html>
